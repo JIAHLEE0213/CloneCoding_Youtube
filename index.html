@@ -4,60 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 구글폰트 가져오기 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Document</title>
     <!-- 아이콘 가져오기 링크 -->
     <script src="https://kit.fontawesome.com/f1adcdeb1f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
+    <header>    
+        <div class="navbar_logo">
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube">Youtube</i></a>
+        </div>
+        <div class="navbar_search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-list"></i>
+        </div>
+    </header>
+
+    <!-- video -->
     <section class="video_container">
-        <div class="navbar">
-            <div class="navbar_logo">
-                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube">Youtube</i></a>
-            </div>
-            <div class="navbar_search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-list"></i>
-            </div>
-        </div>
-        <div class="video">
-            <div class="video_display">
-                나는야 영상
-            </div>
-            <div class="video_icons">
-                <div class="video_play">
-                    <i class="fa-solid fa-play"> 0:08</i>
-                </div>
-                <div class="video_category">
-                    <i class="fa-solid fa-volume-high"></i>
-                    <i class="fa-solid fa-expand"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-        </div>
+        <video controls src="video/레이산책.MOV"></video>
     </section>
+
+    <!-- video info  -->
     <section class="title_container">
-        <div class="main_title">
-            <div class="tag">#Dreamcoding #Dreamcoders #JIAH</div>
-            <div class="title">Clone Coding:Youtube Mobile Website 유튜브 모바일 웹사이트 따라 만들기 | 프로트엔드 개발자 입문편:HTML,CSS,JAVACRIPT</div>
-            <div class="info">1M viewers 1month ago</div>
-            <div class="icons">
-                <i class="fa-regular fa-thumbs-up"></i>
-                <i class="fa-solid fa-thumbs-down"></i>
-                <i class="fa-solid fa-share">Share</i>
-                <i class="fa-solid fa-plus">Save</i>
-                <i class="fa-solid fa-flag">Report</i>
+        <ul class="hashtags">
+            <li>#Puppy</li>
+            <li>#REI</li>
+            <li>#JIAH</li>
+        </ul>
+        <div class="TitleButton">
+            <span class="title">
+                Clone Coding:Youtube Mobile Website 유튜브 모바일 웹사이트 따라 만들기 | 프로트엔드 개발자 입문편:HTML,CSS,JAVACRIPT
+            </span>
+            <button class="moreBtn">
+                <i class="fa-duotone fa-circle-chevron-down"></i>
+            </button>
+            <div class="viewer">1M viewers 1month ago</div>
+        </div> 
+        <ul class="icons">
+            <li><button><i class="fa-regular fa-thumbs-up">1k</i></button></li>
+            <li><button><i class="fa-solid fa-thumbs-down">0</i></button></li>
+            <li><button><i class="fa-solid fa-share">Share</i></button></li>
+            <li><button><i class="fa-solid fa-plus">Save</i></button></li>
+            <li><button><i class="fa-solid fa-flag">Report</i></button></li>
+        </ul>
+        <div class="channel">
+            <div class="channel_data">
+                <img src="image/avatar_image.png" alt="">
+                <div class="channel_info">
+                    <div class="name">NellaFantaJia</div>
+                    <div class="subscribers">1M subscribers</div>
+                </div>
             </div>
-            <div class="profile_content">
-                <img src="" alt="">
-                <div class="profile">드림코딩 by 엘리</div>
-                <div class="subscriber">1M subsribers</div>
-                <div class="subscribe">Subscribe</div>
-            </div>
+            <button class="subscribe">Subscribe</button>
         </div>
     </section>
+
+    <!-- UpNext category -->
     <section class="UpNext">
-        <div class="category">나는야 목록</div>
+        <div class="category">UpNext</div>
+        <ul>
+            <li class="item">
+                <img src="image/레이산책.jpeg" alt="">
+                    <span class="title">눈누난나~ 신나는 레이 산책</span>
+                    <span class="channel">NellaFantaJia</span>
+                    <span class="view">10k views</span>
+                    <button class="more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </li>
+            <li class="item">
+                <img src="image/시무룩레이.jpeg" alt="">
+                    <span class="title">운동하기 싫은 레이</span>
+                    <span class="channel">NellaFantaJia</span>
+                    <span class="view">20k views</span>
+                    <button class="more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </li>
+            <li class="item">
+                <img src="image/잠자는레이.jpeg" alt="">
+                    <span class="title">코코낸내 레이</span>
+                    <span class="channel">NellaFantaJia</span>
+                    <span class="view">30k views</span>
+                    <button class="more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </li>
+        </ul>
     </section>
 </body>
 </html>
