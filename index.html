@@ -7,7 +7,7 @@
     <!-- 구글폰트 가져오기 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
     <!-- 아이콘 가져오기 링크 -->
     <script src="https://kit.fontawesome.com/f1adcdeb1f.js" crossorigin="anonymous"></script>
@@ -43,16 +43,26 @@
                 Clone Coding:Youtube Mobile Website 유튜브 모바일 웹사이트 따라 만들기 | 프로트엔드 개발자 입문편:HTML,CSS,JAVACRIPT
             </span>
             <button class="moreBtn">
-                <i class="fa-duotone fa-circle-chevron-down"></i>
+                <i class="fa-solid fa-square-caret-down"></i>
             </button>
-            <div class="viewer">1M viewers 1month ago</div>
-        </div> 
+        </div>
+        <div class="viewer">1M viewers 1month ago</div> 
         <ul class="icons">
-            <li><button><i class="fa-regular fa-thumbs-up">1k</i></button></li>
-            <li><button><i class="fa-solid fa-thumbs-down">0</i></button></li>
-            <li><button><i class="fa-solid fa-share">Share</i></button></li>
-            <li><button><i class="fa-solid fa-plus">Save</i></button></li>
-            <li><button><i class="fa-solid fa-flag">Report</i></button></li>
+            <li>
+                <button><i class="active fa-solid fa-thumbs-up"></i><div>1k</div></button>
+            </li>
+            <li>    
+                <button><i class="fa-solid fa-thumbs-down"></i><div>0</div></button>
+            </li>
+            <li>
+                <button><i class="fa-solid fa-share"></i><div>Share</div></button>
+            </li>
+            <li>
+                <button><i class="fa-solid fa-plus"></i><div>Save</div></button>
+            </li>
+            <li>
+                <button><i class="fa-solid fa-flag"></i><div>Report</div></button>
+            </li>
         </ul>
         <div class="channel">
             <div class="channel_data">
@@ -71,24 +81,30 @@
         <div class="category">UpNext</div>
         <ul>
             <li class="item">
-                <img src="image/레이산책.jpeg" alt="">
+                <div class="img"><img src="image/레이산책.jpeg" alt=""></div>
+                <div class="UpNext_info">
                     <span class="title">눈누난나~ 신나는 레이 산책</span>
                     <span class="channel">NellaFantaJia</span>
                     <span class="view">10k views</span>
+                </div>
                     <button class="more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
             </li>
             <li class="item">
-                <img src="image/시무룩레이.jpeg" alt="">
+                <div class="img"><img src="image/시무룩레이.jpeg" alt=""></div>
+                <div class="UpNext_info">
                     <span class="title">운동하기 싫은 레이</span>
                     <span class="channel">NellaFantaJia</span>
                     <span class="view">20k views</span>
+                </div>
                     <button class="more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
             </li>
             <li class="item">
-                <img src="image/잠자는레이.jpeg" alt="">
+                <div class="img"><img src="image/잠자는레이.jpeg" alt=""></div>
+                <div class="UpNext_info">
                     <span class="title">코코낸내 레이</span>
                     <span class="channel">NellaFantaJia</span>
                     <span class="view">30k views</span>
+                </div>
                     <button class="more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
             </li>
         </ul>
