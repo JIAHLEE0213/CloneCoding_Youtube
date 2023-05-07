@@ -1,34 +1,71 @@
+ /* 잘 사용되어지는 색깔들 변수로 정의 */
+:root {
+     /* color */
+    --white-color : #fff;
+    --black-color : #140a00;
+    --blue-color : #045fd4;
+    --red-color :#ff0000;
+    --grey-light-color : #e0e0e0;
+    --grey-dark-color : #909090; 
+    /* size */
+    --padding : 12px;
+     /* Font Size */
+     --font-small : 12px;
+     --font-medium : 14px;
+     --font-large : 18px;
+     --font-micro : 10px;
+}
+
 * { 
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.navbar {
-    display: flex;
-    height: 5vh;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.video {
-    display: flex;
-    flex-direction: column;
-    height: 30vh;
-
-}
-
-.video >:nth-child(2) {
+/* Header */
+header {
     display: flex;
     justify-content: space-between;
-    margin-top: auto;
+    padding : var(--padding);
+    background-color: var(--black-color);
+    color :var(--white-color);
 }
 
-.title_container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+header .navbar_logo {
+    font-size: var(--font-large);
 }
 
+header .navbar_logo i {
+    color : var(--red-color);
+}
+
+header .navbar_logo a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+header .navbar_search i {
+    margin-right: var(--padding);
+}  
+
+/* Video Player */
+.video_container {
+    /* 영상위부분에 고정시키기 */
+    position: sticky;
+    /* 어디로 position 할건지 알려줘야함 */
+    top : 0;
+    text-align: center;
+    background-color: var(--black-color);
+}
+
+.video_container video {
+    /* 반응형으로 만들기 위해서 % */
+    width : 100%;
+    height: 100%;
+    /* 최대로 커질수있는 사이즈를 정해둠 */
+    max-width: 1000px;
+}
